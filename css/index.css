@@ -18,4 +18,23 @@
 .blog_home {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+.blog__card {
+  border: 1px solid #eee;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 720px) {
+  body {
+    font-size: 0.8em;
+  }
+  
+  .header__title h1 {
+    font-size: 1.5rem;
+  }
+
+  .blog_home {
+    grid-template-columns: 1fr;
+  }
 }
